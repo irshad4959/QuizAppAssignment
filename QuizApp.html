@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="QuizApp.css">
+</head>
+<body>
+    <marquee scrollamount="10">
+        <h3 style="color: darkblue;">This Is Quiz App</h3>
+    </marquee>
+    <span style="display:inline-block ;"><h2 style="color: royalblue ;">IRSHAD ALI</h2></span>
+ <!-- IN this portion done only the first look show -->
+<div class="quiz-home-box">
+    <img src="textbook.png" alt="logo img" id="testbook">
+    <!-- <h1>Welcome To The TestBook Quiz App</h1> -->
+        <span id="hi">HELLO USERS!</span>
+        <br>
+    <h3>Enter Your Name To Continue The Quiz</h3>
+    <br>
+   <h3 id="name" class="name"></h3>
+   <input type="text"  autocomplete="off" class="User-Control-Inputs" value="" name="" id="username" placeholder="enter the name"> 
+   <button type="submit" class="user-btn" value="submit" action="click">Enter</button>
+   <hr>
+   <h3 id="h3">You will have 10 seconds to answer the each question.</h3>
+   <h1>Select Catergory</h1>
+    <div class="catergory-Box">
+        <!-- <input type="button" type="text" value="Pipes And Cisterns" onclick="OpenCategory()">
+        <input type="button" type="text" value="Probablity" onclick="OpenCategory()">
+        <input type="button" type="text" value="Problems On Age" onclick="OpenCategory()">
+        <input type="button" type="text" value="Profit and Loss" onclick="OpenCategory()">    -->
+        <button type="button" value="click" onclick="piAndCi()">Pipes and Cistersns</button>
+        <button type="button" value="click" onclick="prob()">Probablity</button>
+        <button type="button" value="click" onclick="prAndAG()">Prbolems and Ages</button>
+        <button type="button" value="click" onclick="pAndL()">Profit and Loss</button>
+    </div>
+    </div>
+    <br>
+    <br>
+    
+
+    <!-- Here will show the option of the site -->
+  
+    <div class="quiz-box">
+        <h2 id="name">Give Your Best <span class="quiz-box-name">Name!</span></h2>  
+        <h1 class="category-text" style="color:#000;"></h1>
+        
+        <div class="stats" >
+            <div class="quiz-time" id="countdown">
+                <span>00:00</span>                 
+            </div>
+            <img src="testbook.png" alt="textbook logo">
+        <h2 id="pipes">PIPES AND CISTERSNS</h2>
+        <div class="container">
+         <h2 class="perquestiontimer"></h2>
+                <div class="remaining-time"></div>
+                <span class="time-up-text" id="countdown">00:00</span>
+            <div class="score-board">
+                <span class="score-text">Score:</span>
+                <span class="correct-answer">5</span>
+            </div>
+            </div> 
+            <div class="question-box">
+                "Two pipes A and B can fill a tank in 15 minutes and 20 minutes respectively. Both the pipes are opened together but after 4 minutes, pipe  A is turned off. What is the total time required to fill the tank?",
+                 </div>
+             </div>
+             <div class="option-box">
+                 <span>"10 min. 20 sec."</span>
+                 <span>"11 min. 45 sec."</span>
+                 <span>"11 min. 45 sec."</span>
+                 <span>"14 min. 40 sec."</span>
+             </div>  
+             <div class="answer-description">
+                 <option value="number"> 3</option>
+             </div>
+             <div class="next-ques">
+                 <button type="button" class="next-question-btn btn">Next Question</button>
+                 <button type="button" class="see-result-btn btn">See Your Result</button>
+             </div>
+           </div>
+        </div>
+        
+      <!-- portion third has been started -->
+      <div class="quiz-over-box" style= "font-size:2.4rem">
+        <h1 class="quiz-result-heading" style="font-size:2.4rem;font-family:sans-sarif;color:#43b6f8;">Quiz Result</h1><br>
+        <h4 style="font-size:1.2rem;"><span class="username-value" style="text-transform:uppercase;"></span>Your Result is:</h4><br>
+        <h4 style="font-size:1.2rem;">Total Time Taken : <span class="taken-time"></span>seconds</h4><br>
+        <h4 style="font-size:1.2rem;">Total Quetion : <span class="total-questions"></span></h4><br>
+        <h4 style="font-size: 1.2rem;">Attempt : <span class="total-attempt"></span></h4><br>
+        <h4 style="font-size:1.2rem;">Correct: <span class="total-correct"></span></h4><br>
+        <h4 style="font-size:1.2rem;">Wrong : <span class="total-wrong"></span></h4><br>
+        <h4 style="font-size:1.2rem;">Percentage : <span class="percentage"></span></h4><br>
+        <div class="per-question-result"></div>
+        <button type="button" class="start-again-btn btn">Start Again</button>
+        <button type="button" class="go-home-btn btn">Go Home</button>
+      </div>
+      <script src="QuizApp.js"></script>
+</body>
+</html>
